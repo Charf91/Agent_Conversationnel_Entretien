@@ -14,7 +14,7 @@ agent.ipynb        Notebook exécuté, sections 1 à 7 :
                      5  Adaptation LoRA
                      6  Évaluation avant / après sur 20 requêtes de test
                      7  Interface Gradio
-demo_adapter.ipynb Utiliser l'agent sans réentraîner : télécharge le modèle de base et
+adapter.ipynb Utiliser l'agent sans réentraîner : télécharge le modèle de base et
                    l'adaptateur entraîné, puis interface Gradio de comparaison base / LoRA
 rapport.pdf        Rapport (4 pages)
 README.txt         Ce fichier
@@ -56,7 +56,7 @@ Section 6  Perte sur data/test.jsonl : 2,32 (base) -> 0,21 (LoRA).
   accelerate, peft, gradio, pandas, numpy, matplotlib. Le notebook désinstalle
   torchao, préinstallé dans Colab et incompatible avec peft.
 
-4. REPRODUIRE L'EXÉCUTION (environ 1 h, dont 30 min de calcul)
+4. REPRODUIRE L'EXÉCUTION (environ 30 min)
 --------------------------------------------------------------
 Étape 1 — Ouvrir
   colab.research.google.com -> Importer -> agent.ipynb
@@ -101,22 +101,12 @@ loss_curves.png, training_log.json suivi de l'entraînement
 
 6. UTILISER L'ADAPTATEUR SANS RÉENTRAÎNER
 -----------------------------------------
-Méthode simple : ouvrir demo_adapter.ipynb dans Colab (GPU T4 conseillé), puis
+Méthode simple : ouvrir adapter.ipynb dans Colab (GPU T4 conseillé), puis
 Exécution -> Tout exécuter. L'adaptateur est téléchargé automatiquement depuis la
 release GitHub ; l'interface Gradio apparaît en 1 à 2 minutes, avec un sélecteur
 « après entraînement (LoRA) / avant entraînement (modèle de base) ».
 
-Code minimal équivalent :
-!pip uninstall -y -q torchao && pip install -q peft
-!wget -q https://github.com/Charf91/Agent_Conversationnel_Entretien/releases/download/v1.0/coach_lora_adapter.zip
-!unzip -q coach_lora_adapter.zip
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from peft import PeftModel
-tok  = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct")
-base = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct", dtype="float32")
-model = PeftModel.from_pretrained(base, "coach_lora_adapter")   # modèle adapté
-L'adaptateur ne contient que les matrices LoRA (8,8 M paramètres, ~35 Mo) : le modèle de
-base est téléchargé automatiquement depuis Hugging Face.
+
 
 7. PROBLÈMES FRÉQUENTS
 ----------------------
