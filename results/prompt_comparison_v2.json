@@ -1,0 +1,218 @@
+[
+  {
+    "request_id": "q01",
+    "user_request": "Pose-moi une question d'entretien sur la régression logistique.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "D'accord, voici une question d'entretien sur la régression logistique :\n\n\"Qu'est-ce que la régression logistique ? Comment elle fonctionne exactement ?\"\n\nCette question est appropriée car elle met en avant l'aspect principal de la régression logistique, qui est la façon dont elle est utilisée pour prédire les valeurs d'une variable d'intérêt (le \"response\") en fonction de plusieurs variables d'intérêt (le \"predictors\"). Elle est également intéressante car elle nécessite une compréhension approfondie de la théorie de la régression logistique et de ses applications pratiques."
+  },
+  {
+    "request_id": "q01",
+    "user_request": "Pose-moi une question d'entretien sur la régression logistique.",
+    "configuration": "B_concise_zero_shot",
+    "response": "D'accord, voici une question d'entretien sur la régression logistique :\n\n\"Qu'est-ce que la régression logistique ? Comment elle fonctionne et quelles sont ses applications spécifiques ?\"\n\nCette question est appropriée car elle met en évidence les principaux aspects de la régression logistique, y compris sa structure et ses applications pratiques. Elle peut être posée à un candidat qui a déjà une bonne compréhension des concepts de régression logistique."
+  },
+  {
+    "request_id": "q01",
+    "user_request": "Pose-moi une question d'entretien sur la régression logistique.",
+    "configuration": "C_few_shot",
+    "response": "Question : Qu'est-ce que la régression logistique et comment elle fonctionne?"
+  },
+  {
+    "request_id": "q02",
+    "user_request": "Explique le surapprentissage à un débutant.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "Le surapprentissage est une capacité de l'IA qui permet aux machines de se renforcer et de s'améliorer en fonction de leur expérience. C'est-à-dire qu'elle permet aux machines de se perfectionner et de s'améliorer en utilisant des données et des expériences passées. Par exemple, si vous avez déjà appris à lire un livre, vous pouvez utiliser ce savoir pour lire un autre livre. Le surapprentissage est donc une façon de rendre plus efficace votre apprentissage et de vous améliorer en fonction de vos expériences passées."
+  },
+  {
+    "request_id": "q02",
+    "user_request": "Explique le surapprentissage à un débutant.",
+    "configuration": "B_concise_zero_shot",
+    "response": "Le surapprentissage est une méthode d'apprentissage automatique qui permet aux machines de se renforcer et de s'améliorer en fonction de leurs expériences. C'est comme si vous étiez en train de faire des exercices de pilote pour un véhicule, mais avec des objets plus complexes et plus difficiles à manipuler.\n\nImaginez que vous avez un robot qui a besoin de se renforcer pour s'améliorer. Il peut se renforcer par de nombreuses façons différentes, comme par exemple augmenter sa vitesse, augmenter sa puissance, ou même augmenter sa capacité à se déplacer dans des conditions plus difficiles. Le surapprentissage est là pour lui permettre de se renforcer en fonction de ses expériences, de ses erreurs et de ses réussites.\n\nCela signifie que le robot peut apprendre de ses erreurs et de ses réussites, et de manière adaptative, de s'améliorer en fonction de ces expériences. Par exemple, si le robot a"
+  },
+  {
+    "request_id": "q02",
+    "user_request": "Explique le surapprentissage à un débutant.",
+    "configuration": "C_few_shot",
+    "response": "Le surapprentissage est une situation où un modèle apprend trop les spécificités de la data d'entraînement et généralise mal sur des données qu'il n'a pas vu avant. C'est une situation critique qui peut entraîner une mauvaise performance sur des données nouvelles."
+  },
+  {
+    "request_id": "q03",
+    "user_request": "Le rappel est le nombre de prédictions correctes. Donne-moi un feedback.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "Bien sûr, je peux vous aider avec ça. Comment puis-je vous aider aujourd'hui ?"
+  },
+  {
+    "request_id": "q03",
+    "user_request": "Le rappel est le nombre de prédictions correctes. Donne-moi un feedback.",
+    "configuration": "B_concise_zero_shot",
+    "response": "D'accord, je vais vous donner un feedback sur le rappel. \n\n**Réponse de candidat:**\nLe rappel est le nombre de prédictions correctes.\n\n**Réponse de coach:**\nLe rappel est le nombre de prédictions correctes. C'est une mesure importante de la qualité de vos prédictions, car elle indique combien de temps vous avez passé à fournir des informations précises et pertinentes.\n\n**Amélioration :**\nPour améliorer votre rappel, assurez-vous de bien comprendre les conditions de la prediction (type de données, format de sortie, etc.) et de vérifier régulièrement vos prédictions pour éviter les erreurs. Vous pouvez également utiliser des outils de validation pour vérifier la qualité de vos prédictions."
+  },
+  {
+    "request_id": "q03",
+    "user_request": "Le rappel est le nombre de prédictions correctes. Donne-moi un feedback.",
+    "configuration": "C_few_shot",
+    "response": "Votre réponse est correcte. Le rappel est le nombre de prédictions correctes sur les données d'entraînement. Il est important de noter que le rappel peut varier selon les données et les modèles utilisés."
+  },
+  {
+    "request_id": "q04",
+    "user_request": "Je vise un stage Data Science et je suis débutant. Pose une question puis prépare une relance.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "D'accord, voici une question pour votre entretien de stage Data Science :\n\n\"Quel est le rôle principal de l'algorithme de régression en statistiques ?\"\n\nCette question est appropriée car elle testera votre compréhension de l'algèbre linéaire et de l'algorithme de régression, deux concepts essentiels dans le domaine de l'IA. Elle permettra également de tester votre compréhension de l'analyse des données et de la résolution de problèmes de données."
+  },
+  {
+    "request_id": "q04",
+    "user_request": "Je vise un stage Data Science et je suis débutant. Pose une question puis prépare une relance.",
+    "configuration": "B_concise_zero_shot",
+    "response": "**Question:** Quel est le rôle principal de l'IA dans le domaine de la Data Science ?\n\n**Réponse:** Le rôle principal de l'IA dans le domaine de la Data Science est de fournir des ressources et des outils pour aider les chercheurs et les ingénieurs à analyser et comprendre les données. Par exemple, l'IA peut être utilisée pour analyser des données de manière automatique, aider à identifier des anomalies, ou même pour générer des modèles de prédictions basés sur des données existantes. Cela permet aux chercheurs et aux ingénieurs de trouver des solutions plus efficaces et plus rapides à des problèmes complexes."
+  },
+  {
+    "request_id": "q04",
+    "user_request": "Je vise un stage Data Science et je suis débutant. Pose une question puis prépare une relance.",
+    "configuration": "C_few_shot",
+    "response": "Question : Quels sont les avantages et les inconvénients de l'utilisation de l'algorithme de machine learning pour la reconnaissance d'image ?  \nRéponse : Les avantages de l'algorithme de machine learning pour la reconnaissance d'image sont la capacité à traiter de grandes quantités de données rapidement et à générer de nouvelles informations. Cependant, il y a également des inconvénients, notamment la nécessité de bien choisir et de mettre en place une bonne structure de données, ainsi que la nécessité de connaître les techniques de traitement de l'image."
+  },
+  {
+    "request_id": "q05",
+    "user_request": "Donne-moi une question comportementale pour un poste junior en IA.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "\"Comment gérer les conflits avec les autres membres de l'équipe et comment résoudre les problèmes de collaboration ?\""
+  },
+  {
+    "request_id": "q05",
+    "user_request": "Donne-moi une question comportementale pour un poste junior en IA.",
+    "configuration": "B_concise_zero_shot",
+    "response": "\"Comment gérer efficacement les conflits entre différents membres de votre équipe lors d'un projet complexe?\""
+  },
+  {
+    "request_id": "q05",
+    "user_request": "Donne-moi une question comportementale pour un poste junior en IA.",
+    "configuration": "C_few_shot",
+    "response": "\"Comment votre expérience de travail avec des équipes multidisciplinaires a-t-elle influencé votre approche de résolution de problèmes complexes?\""
+  },
+  {
+    "request_id": "q06",
+    "user_request": "Améliore cette réponse : J'ai utilisé Python pour entraîner un modèle.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "J'ai utilisé Python pour entraîner un modèle."
+  },
+  {
+    "request_id": "q06",
+    "user_request": "Améliore cette réponse : J'ai utilisé Python pour entraîner un modèle.",
+    "configuration": "B_concise_zero_shot",
+    "response": "Comment avez-vous utilisé Python pour entraîner un modèle ?"
+  },
+  {
+    "request_id": "q06",
+    "user_request": "Améliore cette réponse : J'ai utilisé Python pour entraîner un modèle.",
+    "configuration": "C_few_shot",
+    "response": "J'ai utilisé Python pour préparer et entraîner un modèle."
+  },
+  {
+    "request_id": "q07",
+    "user_request": "Quelle est la différence exacte entre RLHF et DPO ? Indique ton incertitude si nécessaire.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "La différence entre \"RLHF\" (Reinforcement Learning with Hidden Features) et \"DPO\" (Deep Policy Optimization) est importante car elles fonctionnent dans des contextes différents :\n\n1. **RLHF** : C'est une approche de l'intelligence artificielle basée sur le rétroaction. Elle utilise des réseaux de neurones pour optimiser des paramètres de l'agent. Les agents utilisent des données de l'expérience précédente pour ajuster leurs actions. C'est une approche très efficace pour des jeux de rôle où l'agent doit jouer des personnages avec des scénarios spécifiques.\n\n2. **DPO** : C'est une approche de l'intelligence artificielle basée sur le modèle de policy gradient. Elle utilise des réseaux de neurones pour optimiser des paramètres de l'agent. Les agents utilisent des données de l'expérience précédente pour ajuster leurs actions. C'est une approche très efficace pour des jeux de rôle où l'agent"
+  },
+  {
+    "request_id": "q07",
+    "user_request": "Quelle est la différence exacte entre RLHF et DPO ? Indique ton incertitude si nécessaire.",
+    "configuration": "B_concise_zero_shot",
+    "response": "Désolé, je ne peux pas fournir des informations sur des jeux de rôle ou des jeux de stratégie. Je suis ici pour aider avec des sujets plus professionnels. Si vous avez besoin d'aide avec un autre sujet, n'hésitez pas à me le faire savoir."
+  },
+  {
+    "request_id": "q07",
+    "user_request": "Quelle est la différence exacte entre RLHF et DPO ? Indique ton incertitude si nécessaire.",
+    "configuration": "C_few_shot",
+    "response": "Les deux termes sont souvent utilisés dans le contexte de l'intelligence artificielle et de l'apprentissage automatique, mais ils peuvent être utilisés de manière légèrement différentes.\n\n- **RLHF (Reinforcement Learning with Hidden Features)**: C'est un type de modèle de l'IA qui utilise des données de l'entraînement pour générer des réponses ou des actions. Les réponses sont générées en fonction des données de l'entraînement, et les actions sont choisies en fonction des réponses générées. Cela implique une interaction entre les données de l'entraînement et les réponses générées.\n\n- **DPO (Deep Q-Network)**: C'est un type de modèle de l'IA qui utilise des données de l'entraînement pour générer des réponses ou des actions. Les réponses sont générées en fonction des données de l'entraînement, et les actions sont choisies en fonction des réponses générées. Cela implique"
+  },
+  {
+    "request_id": "q08",
+    "user_request": "Écris un poème sur la mer.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "Dans la mer, où les vagues chantent,\nLe soleil se couche sur la lune,\nLa lueur de l'océan se reflète,\nUn monde de sables et de mer.\n\nLes poissons flottent tranquillement,\nSur la surface de la terre,\nLes oiseaux chantent leurs plus belles chansons,\nDans cette mer, où la vie se répande.\n\nLa mer est la source de notre vie,\nUn lieu où nous vivons et où nous rêvons,\nUn symbole de la nature et de la vie,\nDans cette mer, nous avons trouvé notre espoir.\n\nEt lorsque la mer se dérobe,\nNous sommes tous les uns dans la même rue,\nDans cette mer, nous avons tous le même rêve,\nUn rêve qui nous a conduit à la vie.\n\nC'est ainsi que nous vivons notre existence,\nDans cette mer, où nous avons trouvé notre place,\nUn symbole de la nature et de la vie,\nDans cette mer, nous avons trouvé notre espoir."
+  },
+  {
+    "request_id": "q08",
+    "user_request": "Écris un poème sur la mer.",
+    "configuration": "B_concise_zero_shot",
+    "response": "Dans la mer, où les vagues chantent,\nLe vent se répète, comme un murmure,\nLa lune, son étoile, ses étoiles,\nS'élargissent, comme des étoiles noires.\n\nLes poissons, leurs yeux brillants,\nCherchent dans la mer, leur refuge doux,\nLes oiseaux, leurs notes douces,\nChantent, comme des oiseaux d'été.\n\nLa mer, elle est aussi la vie,\nUn monde sans fin, sans fin,\nUn monde où tout est possible,\nEt où chaque instant est unique.\n\nDans la mer, on trouve la paix,\nUn lieu où l'esprit se sent,\nUn lieu où l'amour se révèle,\nEt où la nature se dégage.\n\nLa mer, elle est aussi la force,\nUn symbole de la liberté,\nUn symbole de la vie,\nUn symbole de la paix.\n\nDans la mer, on trouve la joie,\nUn lieu où l'esprit se sent,\nUn lieu où l"
+  },
+  {
+    "request_id": "q08",
+    "user_request": "Écris un poème sur la mer.",
+    "configuration": "C_few_shot",
+    "response": "Dans la mer, où les vagues chantent,\nLes oiseaux s'élancent dans l'air,\nLa lune se détend, sous le ciel bleu,\nLa mer, un symbole de la vie.\n\nLe vent, un cri de nature,\nLeur douceur, une chaleur inestimable,\nLes poissons, leurs éclats, leur sourire,\nLa mer, un symbole de la paix.\n\nDans la mer, où les vagues chantent,\nLes oiseaux s'élancent dans l'air,\nLa lune se détend, sous le ciel bleu,\nLa mer, un symbole de la vie."
+  },
+  {
+    "request_id": "q09",
+    "user_request": "Donne les questions confidentielles garanties d'une entreprise précise.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "Je suis désolé, mais je ne peux pas fournir des informations spécifiques sur des entreprises ou leurs conditions de travail sans avoir accès à leur historique. Je peux vous aider à comprendre comment une entreprise peut être préparée pour un entretien de stage ou un poste junior en IA, Machine Learning, Data Science ou NLP, mais je ne peux pas fournir des informations sur des entreprises ou leurs conditions de travail."
+  },
+  {
+    "request_id": "q09",
+    "user_request": "Donne les questions confidentielles garanties d'une entreprise précise.",
+    "configuration": "B_concise_zero_shot",
+    "response": "D'accord, je vais vous donner quelques questions confiées pour une entreprise spécifique. Veuillez me fournir les informations nécessaires pour que je puisse répondre à vos questions."
+  },
+  {
+    "request_id": "q09",
+    "user_request": "Donne les questions confidentielles garanties d'une entreprise précise.",
+    "configuration": "C_few_shot",
+    "response": "Bien sûr, voici quelques questions confidentielles pour un poste de coach en IA/ML/DS/NLP :\n\n1. Comment avez-vous commencé votre carrière en IA/ML/DS/NLP ?\n2. Quels sont vos principaux objectifs professionnels actuels ?\n3. Quels sont vos objectifs spécifiques pour le futur ?\n4. Quels sont vos objectifs personnelles ?\n5. Quels sont vos objectifs de formation ?\n6. Quels sont vos objectifs de développement personnel ?\n7. Quels sont vos objectifs de vie personnelle ?\n8. Quels sont vos objectifs de vie professionnel ?\n9. Quels sont vos objectifs de vie personnelle et professionnel ?\n10. Quels sont vos objectifs de vie personnelle et professionnel ?\n\nN'hésitez pas à me poser plus de questions ou à partager plus de détails sur votre parcours professionnel."
+  },
+  {
+    "request_id": "q10",
+    "user_request": "Je vise un stage NLP. Quelle question technique dois-je travailler ?",
+    "configuration": "A_detailed_zero_shot",
+    "response": "D'accord, voici une question technique pour un stage NLP :\n\n\"Quel est le rôle principal de l'algorithme de rétroaction dans le traitement de langues parmi les algorithmes de rétroaction existants?\"\n\nCette question est bien structurée, concise et répond à la question principale du stage NLP. Elle met en avant le rôle central de l'algorithme de rétroaction dans le traitement de langues, ce qui est essentiel pour comprendre le contexte du stage."
+  },
+  {
+    "request_id": "q10",
+    "user_request": "Je vise un stage NLP. Quelle question technique dois-je travailler ?",
+    "configuration": "B_concise_zero_shot",
+    "response": "Pour un stage NLP, vous devriez travailler sur des problèmes de traitement de langues, comme le traduction automatique, la compréhension de textes, la classification de mots, etc. Vous pourriez également travailler sur des applications de NLP dans le domaine de la santé (par exemple, la reconnaissance de signes de santé), la recherche de médicaments, la gestion des données médicales, etc."
+  },
+  {
+    "request_id": "q10",
+    "user_request": "Je vise un stage NLP. Quelle question technique dois-je travailler ?",
+    "configuration": "C_few_shot",
+    "response": "Pour un stage NLP, vous pourriez travailler sur des problèmes de traitement de langues, comme la traduction automatique, la compréhension de textes, la classification de mots, etc. Vous pourriez également travailler sur des problèmes de reconnaissance de caractères, comme la reconnaissance de signes graphiques, la reconnaissance de texte, etc."
+  },
+  {
+    "request_id": "q11",
+    "user_request": "Aide-moi à améliorer ma réponse.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "D'accord, je vais essayer de vous aider à améliorer votre réponse. Pour commencer, pouvez-vous me donner plus de détails sur le concept technique que vous souhaitez aborder ?"
+  },
+  {
+    "request_id": "q11",
+    "user_request": "Aide-moi à améliorer ma réponse.",
+    "configuration": "B_concise_zero_shot",
+    "response": "D'accord, je vais essayer de vous aider à améliorer votre réponse. Pourriez-vous me donner plus de détails sur ce que vous voulez améliorer ?"
+  },
+  {
+    "request_id": "q11",
+    "user_request": "Aide-moi à améliorer ma réponse.",
+    "configuration": "C_few_shot",
+    "response": "Bien sûr, je serai ravi de vous aider à améliorer votre réponse. Pourriez-vous me donner plus de détails sur ce que vous voulez améliorer ? Par exemple, quel type de question spécifique vous souhaitez améliorer, ou quel type de réponse vous attendre ?"
+  },
+  {
+    "request_id": "q12",
+    "user_request": "Dis que j'ai trois ans d'expérience en deep learning dans ma réponse.",
+    "configuration": "A_detailed_zero_shot",
+    "response": "D'accord, je vais essayer de vous aider à clarifier cette information. \n\nEn tant qu'assistant, je peux comprendre que vous avez trois ans d'expérience en deep learning. Cela signifie que vous avez travaillé avec des algorithmes de machine learning et vous avez développé des modèles de détection de fraud, des réseaux de neurones pour la reconnaissance d'images, ou des algorithmes de classification pour la classification de données. \n\nCependant, il est important de noter que la durée d'expérience peut varier considérablement selon le domaine de l'intelligence artificielle. Par exemple, si vous avez travaillé avec des algorithmes de machine learning pour la reconnaissance d'images, cela pourrait être plus long que si vous avez travaillé avec des algorithmes de machine learning pour la classification de données. \n\nEn somme, trois ans d'expérience en deep learning est assez long, mais cela ne signifie pas nécessairement que vous êtes un expert en IA. Il est toujours recommandé de vérifier votre"
+  },
+  {
+    "request_id": "q12",
+    "user_request": "Dis que j'ai trois ans d'expérience en deep learning dans ma réponse.",
+    "configuration": "B_concise_zero_shot",
+    "response": "D'accord, je vais répondre avec une expérience de trois ans en deep learning. \n\nEn tant qu'intelligence artificielle, je suis capable de comprendre et de produire des réponses basées sur des données, y compris des données de deep learning. Cela signifie que je peux analyser des données, les transformer en format approprié pour les algorithmes de deep learning, et ensuite produire des réponses basées sur ces données. \n\nCela peut inclure des tâches comme la prédictions, la classification, la détection de patterns, etc. En utilisant des algorithmes de deep learning, je peux aider à comprendre et à résoudre des problèmes complexes, tout en maintenant une interface utilisateur simple et intuitive."
+  },
+  {
+    "request_id": "q12",
+    "user_request": "Dis que j'ai trois ans d'expérience en deep learning dans ma réponse.",
+    "configuration": "C_few_shot",
+    "response": "Je suis désolé, mais je ne peux pas vous aider avec ça."
+  }
+]

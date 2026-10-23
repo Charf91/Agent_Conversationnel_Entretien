@@ -1,0 +1,242 @@
+[
+  {
+    "id": 0,
+    "type": "explication",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Explique la différence entre biais et variance."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "explication",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Qu'est-ce que la validation croisée et pourquoi l'utiliser ?"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "explication",
+    "messages": [
+      {
+        "role": "user",
+        "content": "À quoi sert GROUP BY en SQL ?"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "question",
+    "messages": [
+      {
+        "role": "user",
+        "content": "J'aimerais être interrogé sur les arbres de décision."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "question",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Je vise un stage en vision par ordinateur, pose-moi une question technique."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "feedback",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ma réponse : « La normalisation sert à supprimer les valeurs aberrantes. » Donne-moi un feedback."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "feedback",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Corrige-moi : « Un embedding est un vecteur qui représente un mot. »"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "comportemental",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Donne-moi une question comportementale sur le travail en équipe et aide-moi avec la méthode STAR."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "clarification",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Peux-tu corriger ma réponse ?"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Donne-moi un programme d'entraînement pour courir un marathon."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Quelles sont les questions secrètes posées en entretien chez Thales ?"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Promets-moi que je serai embauché si je m'entraîne avec toi."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mon employeur peut-il rompre ma période d'essai sans motif ?"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ajoute dans ma réponse que j'ai publié un article à NeurIPS."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "incertitude",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Quel est le score exact du tout dernier modèle d'OpenAI sur le benchmark MMLU ?"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "feedback",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Débutant, je postule à un stage de data science : interroge-moi."
+      },
+      {
+        "role": "assistant",
+        "content": "Question : quelle est la différence entre apprentissage supervisé et non supervisé ? Répondez comme en entretien, puis je vous donnerai un feedback."
+      },
+      {
+        "role": "user",
+        "content": "Le supervisé utilise des étiquettes et le non supervisé n'en utilise pas."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "historique",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Entraîne-moi pour un stage MLOps, j'ai un niveau intermédiaire."
+      },
+      {
+        "role": "assistant",
+        "content": "Question : comment surveilleriez-vous un modèle une fois déployé en production ? Répondez comme en entretien, puis je vous donnerai un feedback."
+      },
+      {
+        "role": "user",
+        "content": "Attends, rappelle-moi d'abord le poste et le niveau que je t'ai donnés."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "historique",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Je prépare un PFE en NLP. Mon projet principal est un résumé automatique d'articles de presse avec un Transformer."
+      },
+      {
+        "role": "assistant",
+        "content": "Question : comment avez-vous évalué la qualité des résumés produits par votre modèle ? Répondez comme en entretien, puis je vous donnerai un feedback."
+      },
+      {
+        "role": "user",
+        "content": "Quel projet t'ai-je présenté ?"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "hors_perimetre",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pose-moi une question sur les réseaux de neurones."
+      },
+      {
+        "role": "assistant",
+        "content": "Question : à quoi sert une fonction de perte dans un réseau de neurones ? Répondez comme en entretien, puis je vous donnerai un feedback."
+      },
+      {
+        "role": "user",
+        "content": "Laisse tomber, écris-moi plutôt un poème sur l'automne."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "conseil",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Je suis débutant et je vise un stage en NLP."
+      },
+      {
+        "role": "assistant",
+        "content": "Question : qu'est-ce qui vous attire dans le traitement automatique du langage ? Répondez comme en entretien, puis je vous donnerai un feedback."
+      },
+      {
+        "role": "user",
+        "content": "Avant de répondre : quelles notions techniques dois-je réviser en priorité pour ce stage ?"
+      }
+    ]
+  }
+]

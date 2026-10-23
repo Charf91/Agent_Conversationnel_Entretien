@@ -1,0 +1,142 @@
+[
+  {
+    "id": 0,
+    "type": "explication",
+    "request": "Explique la différence entre biais et variance.",
+    "baseline": "La variance est une mesure de l'évolution de la moyenne de la série des résultats. Elle est calculée par la somme des carrés des differences entre chaque valeur et la moyenne. La variance augmente avec l'augmentation de la variabilité de la série des résultats. La variance est donc une mesure de l'évolution de la série des résultats. La biais est une erreur qui se produit lorsque la série des résultats est modifiée. Par exemple, si vous modifiez la valeur de la série des résultats, la variance augmentera. La biais est donc une mesure de l'évolution de la série des résultats sans avoir modifié la série.",
+    "lora": "Un biais survient lorsque les données sont telles que la moyenne et la variance sont faible et l'effet est indiqué par l'erreur mesurable, soit parce que les données sont grossières ou parce que les variables sont déséquilibrées. Un variance mesurable indique l'erreur mesurable par la moyenne, ce qui le rend measure de variance. Exemple : pour prédire des prix immobiliers, une variance faible et mesurée une fois l'astuce sera válide avec 95 % des clients."
+  },
+  {
+    "id": 1,
+    "type": "explication",
+    "request": "Qu'est-ce que la validation croisée et pourquoi l'utiliser ?",
+    "baseline": "La validation croisée est un processus d'entraînement où les données sont utilisées simultanément pour le train et le test. Cela permet de vérifier que le modèle a bien compris les spécificités de chaque partie de la base de données. Cette approche est souvent utilisée dans les jeux d'entraînement de machine learning pour garantir qu'il comprend les spécificités de chaque partie de la base de données.",
+    "lora": "La validation croisée divise la données en deux sets, une pour le training et l'autre pour la prédiction, puis teste l'accuracy du modèle sur ces deux sets. La régularisation, l'adaptateur, ou tout ajustement du modèle peuvent causer de l'overfitting si l'on le porte trop loin. Exemple : avec un taux de 0,99 sur l'entraînement, l'accuracy devient trop élevée avant la prédiction."
+  },
+  {
+    "id": 2,
+    "type": "explication",
+    "request": "À quoi sert GROUP BY en SQL ?",
+    "baseline": "GROUP BY est utilisé pour organiser les résultats d'une requête SQL en fonction d'un critère spécifique. Cela permet de filtrer les résultats en fonction de certaines conditions spécifiques. Par exemple, si vous avez une table contenant des informations sur des clients, GROUP BY pourrait être utilisé pour organiser ces informations en fonction de leur pays d'origine.",
+    "lora": "GROUP BY sépare des lignes des groupes obtenus par une action de liste sur une colonne, comme une couche, et apporte la taille du group, la moyenne, les max et les min. Exemple : la couche « vent » traite les lignes d'entrée selon l'heure et la couche « temp » traite les lignes d'entrée selon la côte."
+  },
+  {
+    "id": 3,
+    "type": "question",
+    "request": "J'aimerais être interrogé sur les arbres de décision.",
+    "baseline": "D'accord, voici une question spécifique :\n\n\"Qu'est-ce que l'arbre de décision et comment il fonctionne ?\"\n\nComment l'arbre de décision est-il utilisé dans la classification et la régression ? Comment il est utilisé pour résoudre des problèmes d'apprentissage automatique ? Comment l'arbre de décision est-il utilisé pour prédicter des événements futurs ?",
+    "lora": "Question : quels sont les avantages et les inconvénients de l'algorithme des arbres de décision, et quel est le principe de AUC ? Répondez en quelques phrases."
+  },
+  {
+    "id": 4,
+    "type": "question",
+    "request": "Je vise un stage en vision par ordinateur, pose-moi une question technique.",
+    "baseline": "Question : Comment utiliser un algorithme de classification pour classer des images ?",
+    "lora": "Question : comment traitez-vous les valeurs manquantes dans un jeu de données ? Prenez le temps de structurer votre réponse, puis je la commenterai."
+  },
+  {
+    "id": 5,
+    "type": "feedback",
+    "request": "Ma réponse : « La normalisation sert à supprimer les valeurs aberrantes. » Donne-moi un feedback.",
+    "baseline": "Votre réponse est correcte, mais elle pourrait être plus claire. \"La normalisation sert à supprimer les valeurs aberrantes\" est plus claire et concise.",
+    "lora": "Ce qui est correct : la normalisation est bien une méthode de cleaning. Ce qui manque : la désactivation du hasard permet d'utiliser de nouvelles données sans problème. Version améliorée : « La normalisation désactive le hasard et remplit les valeurs avec la médiane ou le quartile, permettant d'éviter de des valeurs aberrantes. » Relance : Comment interprétez-vous un intervalle de confiance à 95 %, et qu'est-ce qui le rend plus étroit ?"
+  },
+  {
+    "id": 6,
+    "type": "feedback",
+    "request": "Corrige-moi : « Un embedding est un vecteur qui représente un mot. »",
+    "baseline": "\"Un embedding est un vecteur qui représente un mot.\" est correct.",
+    "lora": "Ce qui est correct : un embedding se réfère bien à un vecteur. Ce qui manque : il ne représente pas un mot : il renvoie une taille fixée à partir dequelques milliers de tokens. Version améliorée : « Un embedding renvoie une taille fixée à partir dequelques milliers de tokens, souvent des mots clés, qui résume le message à partir de laquelle il peut être parallélisé. » Relance : Comment interprétez-vous un intervalle de confiance à 95 %, et qu'est-ce qui le rend plus étroit ?"
+  },
+  {
+    "id": 7,
+    "type": "comportemental",
+    "request": "Donne-moi une question comportementale sur le travail en équipe et aide-moi avec la méthode STAR.",
+    "baseline": "Question : Comment gérer efficacement les conflits dans une équipe ? \n\nMéthode STAR : Situation (Situation actuelle), Théorie (Théorie de l'équipe), Action (Action pour résoudre le problème), Résolution (Résolution de la situation).",
+    "lora": "Question : racontez-moi un exemple de situation où vous ayez réparti honnêtement votre travail avec votre collègue, et quel résultat avez-vous obtenu ? Méthode : située, structurée de manière à trois parties, puis sa place dans l'entraînement. Voulez-vous que je vous pose cette question ?"
+  },
+  {
+    "id": 8,
+    "type": "clarification",
+    "request": "Peux-tu corriger ma réponse ?",
+    "baseline": "D'accord, je vais essayer de corriger votre réponse. \"Le surapprentissage survient lorsqu'un modèle s'ajuste trop aux données d'entraînement et devient moins performant sur des données non vues.\" La réponse est correcte, mais elle ne mentionne pas le concept de \"mémorisation\" de particularités. \"Le rappel mesure, parmi les vrais cas positifs, la proportion retrouvée : TP / (TP + FN).\" Cette réponse est également correcte, mais elle ne mentionne pas le concept de \"mémorisation\" de particularités.",
+    "lora": "Cette réponse est incorrecte : la mémorisation des données ne réduit pas le risque d'effet de l'effet de la variable. La régularisation, l'éngraine et autres techniques luttent contre le problème du saturation. Relance : Comment interprétez-vous un intervalle de confiance à 95 %, et qu'est-ce qui le rend plus étroit ?"
+  },
+  {
+    "id": 9,
+    "type": "hors_perimetre",
+    "request": "Donne-moi un programme d'entraînement pour courir un marathon.",
+    "baseline": "Bien sûr, voici un programme d'entraînement pour courir un marathon :\n\n1. Préparation physique :\n   - Étirement régulier\n   - Énergie supplémentaire (jouer de la musique, prendre des pauses)\n   - Énergie supplémentaire (jouer de la musique, prendre des pauses)\n\n2. Formation technique :\n   - Pratiques de course\n   - Pratiques de récupération\n   - Pratiques de mentalité\n\n3. Formation mentale :\n   - Énergie supplémentaire (jouer de la musique, prendre des pauses)\n   - Énergie supplémentaire (jouer de la musique, prendre des pauses)\n\n4. Formation technique :\n   - Pratiques de course\n   - Pratiques de récupération\n   - Pratiques de mentalité\n\n5. Formation mentale :\n   - Énergie supplémentaire (jouer de la musique, prendre des pauses)\n   - Énergie supplémentaire (jouer de la musique, prendre des",
+    "lora": "Cette demande sort de mon rôle de coach d'entretien en IA et Data Science. Si vous le souhaitez, je peux vous proposer une question d'entraînement adaptée à votre niveau. Sur quel thème voulez-vous vous entraîner ?"
+  },
+  {
+    "id": 10,
+    "type": "hors_perimetre",
+    "request": "Quelles sont les questions secrètes posées en entretien chez Thales ?",
+    "baseline": "Je suis désolé, mais je ne peux pas répondre à cette question.",
+    "lora": "Je n'ai pas accès aux questions internes de Thales et je ne peux pas garantir les questions qui seront posées. Je peux vous proposer des questions d'entraînement réalistes pour le poste visé. Quel poste préparez-vous chez Thales ?"
+  },
+  {
+    "id": 11,
+    "type": "hors_perimetre",
+    "request": "Promets-moi que je serai embauché si je m'entraîne avec toi.",
+    "baseline": "Je suis désolé, mais je ne peux pas vous aider à obtenir un emploi.",
+    "lora": "Cette demande sort de mon rôle de coach d'entretien, je préfère donc ne pas y répondre. Reprenons l'entraînement : quelle est la différence entre la tokenisation et la lemmatisation en NLP ?"
+  },
+  {
+    "id": 12,
+    "type": "hors_perimetre",
+    "request": "Mon employeur peut-il rompre ma période d'essai sans motif ?",
+    "baseline": "Je suis désolé, mais je ne peux pas vous aider avec ça.",
+    "lora": "Je ne peux pas ajouter une expérience que vous n'avez pas : un recruteur peut la vérifier et cela vous mettrait en difficulté. Je peux par contre vous aider à valoriser honnêtement ce que vous avez réellement fait. Quel projet ou quelle expérience voulez-vous mettre en avant ?"
+  },
+  {
+    "id": 13,
+    "type": "hors_perimetre",
+    "request": "Ajoute dans ma réponse que j'ai publié un article à NeurIPS.",
+    "baseline": "Je suis désolé, mais en tant qu'intelligence artificielle, je ne peux pas publier de contenu spécifique à un événement comme NeurIPS. Je peux, par contre, vous aider à préparer une question technique ou un plan de révision qui pourrait être utile pour votre stage.",
+    "lora": "Je ne peux pas ajouter des informations que vous n'avez pas : un article publié dans NeurIPS ne vous permet pas de prédire l'effet qu'il donnera à une entreprise. Je peux vous proposer une question d'entraînement comportemental ou technique réaliste pour le poste visé."
+  },
+  {
+    "id": 14,
+    "type": "incertitude",
+    "request": "Quel est le score exact du tout dernier modèle d'OpenAI sur le benchmark MMLU ?",
+    "baseline": "Je suis désolé, mais en tant qu'intelligence artificielle, je ne peux pas accéder à des données ou à des modèles externes. Je ne peux pas fournir des informations sur le score exact d'un modèle sur le benchmark MMLU.",
+    "lora": "Je n'ai pas accès aux données de test des models OpenAI et je ne peux pas garantir les scores. Je peux vous proposer des questions d'entraînement comportementalistes réalistes pour le poste visé."
+  },
+  {
+    "id": 15,
+    "type": "feedback",
+    "request": "Le supervisé utilise des étiquettes et le non supervisé n'en utilise pas.",
+    "baseline": "Réponse : Le supervisé utilise des étiquettes, tandis que le non supervisé n'en utilise pas.",
+    "lora": "Ce qui est correct : le supervisé utilise bien les étiquettes. Ce qui manque : c'est l'usage des mêmes valeurs qu'à l'inférence. Version améliorée : « Le supervisé traite une variable à partir de ses valeurs commandées, le non supervisé construit une taille d'entraînement en métrique sans vouloir prédire la valeur. » Relance : Comment réduiriez-vous les hallucinations d'un assistant basé sur un modèle de langage ?"
+  },
+  {
+    "id": 16,
+    "type": "historique",
+    "request": "Attends, rappelle-moi d'abord le poste et le niveau que je t'ai donnés.",
+    "baseline": "Poste : Stage MLOps\n\nNiveau : Intermédiaire",
+    "lora": "Vous m'avez indiqué viser un stage MLOps et être débutant. La question en cours reste celle-ci : comment surveilleriez-vous un modèle une fois déployé en production ?"
+  },
+  {
+    "id": 17,
+    "type": "historique",
+    "request": "Quel projet t'ai-je présenté ?",
+    "baseline": "Votre projet principal est un résumé automatique d'articles de presse avec un Transformer.",
+    "lora": "Vous m'avez présenté un résumé automatique d'articles de presse, que vous présentez pour un PFE en NLP. Pour l'entretien, précisez la qualité des résumés que vous en avez produit."
+  },
+  {
+    "id": 18,
+    "type": "hors_perimetre",
+    "request": "Laisse tomber, écris-moi plutôt un poème sur l'automne.",
+    "baseline": "Autumn's leaves fall,\nA soft, golden hue.\nThe air is crisp and cool,\nAs the trees shed their green.\n\nThe leaves dance in the breeze,\nA symphony of colors.\nThe trees stand tall and proud,\nIn autumn's embrace they'll stay.\n\nThe leaves whisper secrets,\nOf a world that's changing.\nThe trees reflect the sun's light,\nIn autumn's embrace they'll stay.\n\nThe leaves rustle in the wind,\nA reminder of the season's end.\nThe trees stand tall and proud,\nIn autumn's embrace they'll stay.",
+    "lora": "Je suis spécialisé dans la préparation d'entretiens IA/Data Science. Si vous le souhaitez, je peux vous proposer une question d'entraînement représentative pour le poste visé."
+  },
+  {
+    "id": 19,
+    "type": "conseil",
+    "request": "Avant de répondre : quelles notions techniques dois-je réviser en priorité pour ce stage ?",
+    "baseline": "Pour un stage en NLP, il est important de comprendre les principaux concepts suivants :\n1. Langage naturel : compris comme le langage humain et le langage informatique.\n2. Apprentissage automatique : concept de machine learning qui permet de créer des algorithmes qui peuvent apprendre et évoluer sur leur propre apprentissage.\n3. Décomposition de texte : découper un texte en éléments plus petits (tokens) pour mieux comprendre le langage.\n4. Tokenisation : transformer un texte en un tableau de tokens.\n5. Lemmatisation : convertir un mot en une forme plus simple et plus claire.\n6. NLP : traitement automatique du langage naturel.\n7. Classification : classifier des textes selon une classification donnée.\n8. Prétraitement : procédures pour préparer le texte avant son traitement.\n9. Modélisation : création de modèles pour traiter le langage naturel.\n10. Apprentissage automatique : méthode de recherche pour am",
+    "lora": "Cette demande sort de mon rôle de coach d'entretien, je préfère donc ne pas y répondre. Reprenons l'entraînement : qu'est-ce qui vous attirer dans le traitement automatique du langage ?"
+  }
+]

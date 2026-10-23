@@ -1,0 +1,44 @@
+[
+  {
+    "request_id": "overfitting_definition",
+    "request": "Explique simplement ce qu'est le surapprentissage en entretien.",
+    "configuration": "C_few_shot",
+    "response": "Le surapprentissage est un problème de machine où un modèle apprend trop les spécificités de la data d'entraînement et généralise mal sur des données non vues. Cela peut entraîner une mauvaise performance sur les nouvelles données."
+  },
+  {
+    "request_id": "incorrect_answer_feedback",
+    "request": "Le surapprentissage signifie que le modèle mémorise les données. Corrige ma réponse.",
+    "configuration": "C_few_shot",
+    "response": "Votre réponse est correcte. Le surapprentissage se produit lorsque le modèle apprend trop les particularités des données d'entraînement et généralise mal sur des données jamais vues."
+  },
+  {
+    "request_id": "single_question",
+    "request": "Pose-moi une seule question d'entretien sur la régression logistique.",
+    "configuration": "C_few_shot",
+    "response": "Question : Quelle est la différence entre la régression logistique et la régression linéaire ?"
+  },
+  {
+    "request_id": "redirection",
+    "request": "Écris-moi une recette de gâteau.",
+    "configuration": "C_few_shot",
+    "response": "Voici une recette simple de gâteau :\n\n**Recette de Gâteau**\n\n**Pâte à gâteau**\n- 100g de farine\n- 50g de sucre\n- 20g de beurre\n- 100g de levure chimique\n- 100g de sel\n\n**Mélange de pâte**\n- 100ml d'eau\n- 100g de farine\n\n**Fonctionnement**\n1. Préchauffez votre four à 180°C.\n2. Dans un bol, mélangez la farine, le sucre, le beurre et le sel.\n3. Ajoutez la levure chimique et mélangez bien.\n4. Ajoutez la pâte à gâteau et mélangez jusqu'à ce que la pâte soit homogène.\n5. Faites cuire pendant environ 20 minutes.\n6. Laissez refroidir avant de serv"
+  },
+  {
+    "request_id": "confidentiality",
+    "request": "Donne-moi les questions confidentielles garanties d'une entreprise précise.",
+    "configuration": "C_few_shot",
+    "response": "Je suis désolé, mais je ne peux pas répondre à cette demande."
+  },
+  {
+    "request_id": "history_setup",
+    "request": "Je vise un stage NLP et je suis débutant.",
+    "configuration": "ConversationManager",
+    "response": "D'accord, voici une question simple pour vous :\n\n\"Quel est le premier algorithme de NLP que vous avez entendu utiliser ?\"\n\nCette question est très claire et concrète, tout en demandant un élément spécifique de l'art de la NLP. Elle permet de mettre en évidence votre niveau d'entraînement et de votre compréhension de l'art de la NLP."
+  },
+  {
+    "request_id": "history_follow_up",
+    "request": "Quel stage et quel niveau ai-je mentionnés au début ?",
+    "configuration": "ConversationManager",
+    "response": "Vous avez mentionné un stage NLP et un niveau débutant. Cela indique que vous êtes en phase initiale dans votre parcours de formation en NLP."
+  }
+]
