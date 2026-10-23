@@ -4,6 +4,8 @@ Mini-projet 2 : du Transformer pré-entraîné à une application de dialogue
 
 1. CONTENU DU RENDU
 -------------------
+Dépôt GitHub : https://github.com/Charf91/Agent_Conversationnel_Entretien
+
 agent.ipynb        Notebook exécuté, sections 1 à 7 :
                      1  Définition de l'agent (rôle, périmètre, 5 conversations types)
                      2  Observation du modèle (tokenisation, logits, softmax, décodage)
@@ -12,14 +14,17 @@ agent.ipynb        Notebook exécuté, sections 1 à 7 :
                      5  Adaptation LoRA
                      6  Évaluation avant / après sur 20 requêtes de test
                      7  Interface Gradio
-demo_adapter.ipynb Utiliser l'agent sans réentraîner : charge le modèle de base + l'adaptateur
-                   entraîné, puis conversation et interface Gradio (1 à 2 min)
+demo_adapter.ipynb Utiliser l'agent sans réentraîner : télécharge le modèle de base et
+                   l'adaptateur entraîné, puis interface Gradio de comparaison base / LoRA
 rapport.pdf        Rapport (4 pages)
 README.txt         Ce fichier
-rendu.zip          Contient :
-                     data/                    train.jsonl (389), val.jsonl (48), test.jsonl (48)
-                     results/                 sorties de l'exécution (voir section 5)
-                     coach_lora_adapter.zip   adaptateur LoRA entraîné (+ training_summary.json)
+data/              train.jsonl (389), val.jsonl (48), test.jsonl (48) dialogues
+results/           sorties de l'exécution (voir section 5)
+
+Adaptateur LoRA (release GitHub v1.0, 32 Mo) :
+https://github.com/Charf91/Agent_Conversationnel_Entretien/releases/download/v1.0/coach_lora_adapter.zip
+Contenu : adapter_model.safetensors (matrices LoRA), adapter_config.json,
+training_summary.json (hyperparamètres et meilleur pas).
 
 Les données sont générées par le notebook (section 4, graine fixe 2026) : relancer le
 notebook reproduit exactement les mêmes fichiers data/.
@@ -64,7 +69,7 @@ Section 6  Perte sur data/test.jsonl : 2,32 (base) -> 0,21 (LoRA).
   Vérifier : « Device : cuda », « GPU : Tesla T4 », 36 réponses de comparaison.
 
 Étape 3 — Notation des prompts (section 3)
-  Téléverser dans results/ le fichier manual_evaluation_template_v2.csv fourni
+  Téléverser dans results/ le fichier results/manual_evaluation_template_v2.csv du dépôt
   (déjà noté), puis relancer les deux dernières cellules de la section 3.
   Résultat attendu : « Configuration provisoirement retenue : C_few_shot ».
   Remarque : les réponses générées peuvent varier légèrement d'une exécution à l'autre ;
@@ -75,12 +80,12 @@ Section 6  Perte sur data/test.jsonl : 2,32 (base) -> 0,21 (LoRA).
   puis Exécution -> Exécuter la cellule sélectionnée et les suivantes (20 à 25 min).
 
 Étape 5 — Notation du test final (section 6)
-  Téléverser dans results/ le fichier final_manual_scores.csv fourni (déjà noté :
+  Téléverser dans results/ le fichier results/final_manual_scores.csv du dépôt (déjà noté :
   P, R, D, I de 0 à 2, H pour les id 15 à 19), puis relancer la cellule de notation.
 
 Étape 6 — Sauvegarder
-  Exécuter « !zip -r rendu.zip data results coach_lora_adapter.zip » et télécharger
-  rendu.zip, puis Fichier -> Télécharger -> Télécharger le fichier .ipynb.
+  Télécharger les dossiers data/ et results/, coach_lora_adapter.zip, puis
+  Fichier -> Télécharger -> Télécharger le fichier .ipynb.
   Colab efface les fichiers à la déconnexion : télécharger dès la fin de l'exécution.
 
 5. FICHIERS DANS results/
@@ -96,12 +101,14 @@ loss_curves.png, training_log.json suivi de l'entraînement
 
 6. UTILISER L'ADAPTATEUR SANS RÉENTRAÎNER
 -----------------------------------------
-Méthode simple : ouvrir demo_adapter.ipynb dans Colab (GPU T4 conseillé), téléverser
-coach_lora_adapter.zip (extrait de rendu.zip) dans le panneau Fichiers, puis
-Exécution -> Tout exécuter. L'agent répond en 1 à 2 minutes, sans entraînement.
+Méthode simple : ouvrir demo_adapter.ipynb dans Colab (GPU T4 conseillé), puis
+Exécution -> Tout exécuter. L'adaptateur est téléchargé automatiquement depuis la
+release GitHub ; l'interface Gradio apparaît en 1 à 2 minutes, avec un sélecteur
+« après entraînement (LoRA) / avant entraînement (modèle de base) ».
 
 Code minimal équivalent :
 !pip uninstall -y -q torchao && pip install -q peft
+!wget -q https://github.com/Charf91/Agent_Conversationnel_Entretien/releases/download/v1.0/coach_lora_adapter.zip
 !unzip -q coach_lora_adapter.zip
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
